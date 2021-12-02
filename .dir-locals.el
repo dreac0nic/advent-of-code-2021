@@ -1,1 +1,0 @@
-((slime-repl-mode . ((eval . (setenv "AOC_SESSION" "53616c7465645f5f7fe57bf0bf964e83554afa47bf21f78de229385b8325a7b6c1c8f35169b61d580299f728187f4289")))))
