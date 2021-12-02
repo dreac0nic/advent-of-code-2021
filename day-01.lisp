@@ -21,7 +21,7 @@
 
 ;; Solution
 ;; (count-increased-depths *puzzle-input*)
-;; (submit-days-answer 1 (count-increased-depths *puzzle-input*))
+;; (submit-answer 1 (count-increased-depths *puzzle-input*))
 
 
 ;;;; Part Two
@@ -38,4 +38,4 @@
 
 ;; Solution
 ;; (count-increased-depths-sliding *puzzle-input*)
-;; (submit-days-answer 1 (count-increased-depths-sliding *puzzle-input*) :part-one)
+;; (submit-answer 1 (count-increased-depths-sliding *puzzle-input*) :part-two)

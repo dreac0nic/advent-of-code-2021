@@ -2,8 +2,7 @@
 
 (defpackage #:advent-of-code-2021
   (:use #:cl #:arrows #:cl-cookie #:lquery)
-  (:export :get-days-puzzle-input
-           :submit-days-answer))
+  (:export :get-puzzle-input :submit-answer))
 
 
 (defpackage #:day-01

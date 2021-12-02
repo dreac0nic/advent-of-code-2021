@@ -20,7 +20,7 @@
   (format nil "~a://~a/~a" *protocol* *domain* *year*))
 
 
-(defun get-days-puzzle-input (day-number)
+(defun get-puzzle-input (day-number)
   "Retrieves the user's puzzle input for the day specified. Day should be provided as a single integer representing taht day."
   (string-trim '(#\Space #\Newline #\Tab)
                (nth-value 0
@@ -39,7 +39,7 @@
                                                      cookies)))))
 
 
-(defun submit-days-answer (day-number answer &optional part)
+(defun submit-answer (day-number answer &optional (part :part-one))
   "Submits the given answer for the day specified. Optionally :part-one and :part-two can be specified."
   (elt (lquery:$ (initialize (dexador:post (format nil "~a/day/~a/answer" (base-endpoint) day-number)
                                            :cookie-jar (let ((cookies (make-cookie-jar)))
@@ -54,10 +54,10 @@
                                                                list
                                                                (merge-cookies cookies))
                                                          cookies)
-                                           :content `(("level" . ,(format nil "~a" (cond
-                                                                                     ((eq part :part-one) 1)
-                                                                                     ((eq part :part-two) 2)
-                                                                                     ('t 1))))
+                                           :content `(("level" . ,(format nil "~a" (case part
+                                                                                     (:part-one 1)
+                                                                                     (:part-two 2)
+                                                                                     (t 1))))
                                                       ("answer" . ,(format nil "~a" answer)))))
          "body main article p"
          (render-text))
