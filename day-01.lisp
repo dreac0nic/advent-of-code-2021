@@ -2,28 +2,40 @@
 
 (in-package #:day-01)
 
+(defvar *example-input* '(199 200 208 210 200 207 240 269 260 263))
 (defvar *puzzle-input* nil)
 
 ;; (setf *puzzle-input* (mapcar #'parse-integer (split "\\n" (get-days-puzzle-input 1))))
 
 ;;;; Part One
-(get-days-puzzle-input 1)
+(defun count-increased-depths (depths)
+  "Takes a list of depths and counts how many of them increase from the previous"
+  (loop for depth on depths
+        if (and (second depth)
+                (< (first depth) (second depth)))
+          sum 1))
 
 
 ;; Example
-;; (find-expense-entries '(1721 979 366 299 675 1456))
+;; (count-increased-depths *example-input*)
 
 ;; Solution
-;; (find-expense-entries *puzzle-input*)
-;; (submit-days-answer 1 (find-expense-entries *puzzle-input*))
+;; (count-increased-depths *puzzle-input*)
+;; (submit-days-answer 1 (count-increased-depths *puzzle-input*))
 
 
 ;;;; Part Two
+(defun count-increased-depths-sliding (depths)
+  "Takes a list of depths, and finds how many times a sliding window of 3 depths increases from the last trio"
+  (count-increased-depths
+   (loop for depth on depths
+         if (and (third depth))
+           collect (+ (first depth) (second depth) (third depth)))))
 
 
 ;; Example
-;; (find-triple-expense-entries '(1721 979 366 299 675 1456))
+;; (count-increased-depths-sliding *example-input*)
 
 ;; Solution
-;; (find-triple-expense-entries *puzzle-input*)
-;; (submit-days-answer 1 (find-triple-expense-entries *puzzle-input*) :part-one)
+;; (count-increased-depths-sliding *puzzle-input*)
+;; (submit-days-answer 1 (count-increased-depths-sliding *puzzle-input*) :part-one)
