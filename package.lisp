@@ -7,3 +7,7 @@
 
 (defpackage #:day-01
   (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+
+
+(defpackage #:day-02
+  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
