@@ -26,12 +26,6 @@
 
 ;; (setf *puzzle-input* (get-puzzle-input 4))
 
-
-(loop for row from 0 below 5
-      do (loop for col from 0 below 5
-               do (format t "~&~a, ~a~%" row col)))
-
-
 ;;; Parsing input
 (defun read-bingo-input (input &key (rows 5) (cols 5))
   "Takes a string input and extracts a bingo configuration"
