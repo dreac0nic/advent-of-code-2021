@@ -58,8 +58,7 @@
 
 
 ;; Example
-;; (run-simulation *example-input* 256) ; => 26984457539
-;;                                           26984457539
+;; (run-simulation *example-input* 256)
 
 ;; Solution
 ;; (run-simulation *puzzle-input* 256)
