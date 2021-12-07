@@ -27,3 +27,7 @@
 
 (defpackage #:day-06
   (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+
+
+(defpackage #:day-07
+  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
