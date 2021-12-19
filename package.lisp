@@ -43,3 +43,7 @@
 
 (defpackage #:day-10
   (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+
+
+(defpackage #:day-16
+  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
