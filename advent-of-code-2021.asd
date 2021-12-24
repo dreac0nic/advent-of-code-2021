@@ -8,6 +8,7 @@
   :serial t
   :depends-on (#:arrows #:dexador #:cl-cookie #:cl-ppcre #:lquery #:cl-graph #:uiop)
   :components ((:file "package")
+               (:file "utility")
                (:file "advent-of-code-2021")
                (:file "day-01")
                (:file "day-02")

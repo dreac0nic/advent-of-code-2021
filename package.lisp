@@ -5,49 +5,54 @@
   (:export :get-puzzle-input :submit-answer))
 
 
+(defpackage #:utility
+  (:use #:cl)
+  (:export :single? :append1 :map-int :filter :most :compose :disjoin :conjoin :curry :curry :rcurry :always))
+
+
 (defpackage #:day-01
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-02
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-03
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-04
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-05
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-06
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-07
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-08
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-09
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-10
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-16
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
 (defpackage #:day-17
-  (:use #:cl #:arrows #:advent-of-code-2021 #:cl-ppcre))
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
