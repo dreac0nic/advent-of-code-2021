@@ -50,6 +50,10 @@
   (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
 
+(defpackage #:day-11
+  (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
+
+
 (defpackage #:day-16
   (:use #:cl #:utility #:arrows #:advent-of-code-2021 #:cl-ppcre))
 
