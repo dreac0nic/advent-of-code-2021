@@ -1,4 +1,4 @@
-;;;; day-17.lisp
+;;;; day-18.lisp
 
 (in-package #:day-18)
 
