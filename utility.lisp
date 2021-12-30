@@ -93,3 +93,8 @@
 (defun always (x)
   "Always returns X"
   (lambda (&rest args) x))
+
+
+(defun clamp (val floor ceiling)
+  "Clamps the value at a minimum of the floor and a maximum of the ceiling"
+  (min ceiling (max val floor)))

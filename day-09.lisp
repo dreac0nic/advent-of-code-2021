@@ -20,11 +20,6 @@
                 :initial-contents contents)))
 
 ;;; Part One
-(defun clamp (val floor ceiling)
-  "Clamps the value at a minimum of the floor and a maximum of the ceiling"
-  (min ceiling (max val floor)))
-
-
 (defun neighbors (array row col &optional (stride 1))
   "Finds all neighbors, respecting array boundaries"
   (loop for offset from (- stride) to stride

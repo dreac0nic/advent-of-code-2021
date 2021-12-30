@@ -7,7 +7,7 @@
 
 (defpackage #:utility
   (:use #:cl)
-  (:export :single? :append1 :map-int :filter :most :compose :disjoin :conjoin :curry :curry :rcurry :always))
+  (:export :single? :append1 :map-int :filter :most :compose :disjoin :conjoin :curry :curry :rcurry :always :clamp))
 
 
 (defpackage #:day-01
